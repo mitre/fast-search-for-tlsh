@@ -1,0 +1,10 @@
+check = false
+print = false
+wrap = true
+wraplen = 80
+usetabs = true
+tabsize = 1
+tabchar = "tab"
+stdin = false
+verbosity = "error"
+lists = []

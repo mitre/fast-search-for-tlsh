@@ -1,0 +1,38 @@
+benchmark: 5.1.0 (defaults: timer=time.perf_counter disable_gc=False min_rounds=11 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+rootdir: /Users/jordigonzalez/Documents/REAP/source-code/libraries/python
+plugins: benchmark-5.1.0, mock-3.14.0
+collected 27 items
+
+test_fast_tlsh.py sssssssssssssss............                                                                                                                                                                                                                                                [100%]
+
+========================================================================================================================================= warnings summary =========================================================================================================================================
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+--------------------------------------------------------------------------------------------------------- benchmark: 12 tests ---------------------------------------------------------------------------------------------------------
+Name (time in ms)                                    Min                     Max                    Mean                StdDev                  Median                    IQR            Outliers     OPS            Rounds  Iterations
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+test_performance_fast_tlsh_corpus_heavy          98.2815 (1.0)          106.6707 (1.0)          102.9694 (1.0)          2.3319 (1.0)          103.2750 (1.00)          3.1327 (1.03)          2;0  9.7116 (1.0)          11           1
+test_performance_fast_tlsh_query_heavy          100.0578 (1.02)         111.7146 (1.05)         103.6364 (1.01)         3.4365 (1.47)         102.8398 (1.0)           3.2800 (1.08)          3;1  9.6491 (0.99)         11           1
+test_performance_fast_tlsh_mixed_small          151.1445 (1.54)         161.9307 (1.52)         157.3417 (1.53)         3.5794 (1.53)         158.1452 (1.54)          4.3260 (1.42)          4;0  6.3556 (0.65)         11           1
+test_performance_fast_tlsh_mixed_large          389.7075 (3.97)         424.7664 (3.98)         403.4041 (3.92)        12.7537 (5.47)         402.4952 (3.91)         21.2981 (7.00)          5;0  2.4789 (0.26)         11           1
+test_performance_tlsh_corpus_heavy              487.1563 (4.96)         498.8832 (4.68)         490.8618 (4.77)         3.2702 (1.40)         490.3337 (4.77)          3.0411 (1.0)           3;1  2.0372 (0.21)         11           1
+test_performance_tlsh_query_heavy               499.8875 (5.09)         516.8381 (4.85)         507.5261 (4.93)         4.7217 (2.02)         506.5961 (4.93)          6.6707 (2.19)          2;0  1.9703 (0.20)         11           1
+test_performance_fast_tlsh_fixed_large        3,327.6878 (33.86)      3,406.4514 (31.93)      3,358.6797 (32.62)       23.2000 (9.95)       3,357.0854 (32.64)        30.7585 (10.11)         4;0  0.2977 (0.03)         11           1
+test_performance_tlsh_fast_realistic          5,198.2333 (52.89)      5,477.0370 (51.35)      5,363.1933 (52.09)       96.9760 (41.59)      5,386.6235 (52.38)       181.3044 (59.62)         5;0  0.1865 (0.02)         11           1
+test_performance_tlsh_mixed_small            10,063.1660 (102.39)    10,082.6310 (94.52)     10,072.0398 (97.82)        5.6542 (2.42)      10,069.5947 (97.92)         8.2898 (2.73)          2;0  0.0993 (0.01)         11           1
+test_performance_tlsh_mixed_large            40,094.2245 (407.95)    40,266.7096 (377.49)    40,137.9312 (389.80)      46.3164 (19.86)     40,130.0271 (390.22)       24.7092 (8.13)          1;1  0.0249 (0.00)         11           1
+test_performance_tlsh_fixed_large           403,319.5331 (>1000.0)  408,432.0581 (>1000.0)  405,090.1359 (>1000.0)  1,364.1227 (584.99)   405,214.4002 (>1000.0)   1,305.4464 (429.27)        3;1  0.0025 (0.00)         11           1
+test_performance_tlsh_realistic             477,829.6962 (>1000.0)  497,332.5402 (>1000.0)  483,368.4652 (>1000.0)  6,890.3886 (>1000.0)  479,459.2669 (>1000.0)  10,216.6932 (>1000.0)       3;0  0.0021 (0.00)         11           1
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Legend:
+  Outliers: 1 Standard Deviation from Mean; 1.5 IQR (InterQuartile Range) from 1st Quartile and 3rd Quartile.
+  OPS: Operations Per Second, computed as 1 / Mean
+===================================================================================================================== 12 passed, 15 skipped, 2 warnings in 11947.81s (3:19:07) =====================================================================================================================
+➜  python

@@ -1,0 +1,26 @@
+[package]
+name = "fast_tlsh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mimalloc = "0.1"
+rand = "0.8"
+rayon = "1.10"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+tempfile = "3.13.0"
+itertools = "0.13.0"
+
+[dev-dependencies]
+sysinfo = "0.33"
+
+[profile.test]
+debug = true
+
+[profile.bench]
+opt-level = 3
+
+[[bench]]
+name = "benchmarks"
+harness = false

@@ -1,0 +1,958 @@
+@inproceedings{indykApproximateNearestNeighbors1998,
+  address =       {New York, NY, USA},
+  author =        {Indyk, Piotr and Motwani, Rajeev},
+  booktitle =     {Proceedings of the Thirtieth Annual {{ACM}} Symposium
+                   on {{Theory}} of Computing},
+  month =         may,
+  pages =         {604--613},
+  publisher =     {Association for Computing Machinery},
+  series =        {{{STOC}} '98},
+  title =         {Approximate Nearest Neighbors: Towards Removing the
+                   Curse of Dimensionality},
+  year =          {1998},
+  doi =           {10.1145/276698.276876},
+  isbn =          {978-0-89791-962-3},
+}
+
+@article{haqSurveyBinaryCode2021,
+  author =        {Haq, Irfan Ul and Caballero, Juan},
+  journal =       {ACM Comput. Surv.},
+  month =         apr,
+  number =        {3},
+  pages =         {51:1--51:38},
+  title =         {A {{Survey}} of {{Binary Code Similarity}}},
+  volume =        {54},
+  year =          {2021},
+  abstract =      {Binary code similarityapproaches compare two or more
+                   pieces of binary code to identify their similarities
+                   and differences. The ability to compare binary code
+                   enables many real-world applications on scenarios
+                   where source code may not be available such as patch
+                   analysis, bug search, and malware detection and
+                   analysis. Over the past 22 years numerous binary code
+                   similarity approaches have been proposed, but the
+                   research area has not yet been systematically
+                   analyzed. This article presents the first survey of
+                   binary code similarity. It analyzes 70 binary code
+                   similarity approaches, which are systematized on four
+                   aspects: (1) the applications they enable, (2) their
+                   approach characteristics, (3) how the approaches are
+                   implemented, and (4) the benchmarks and methodologies
+                   used to evaluate them. In addition, the survey
+                   discusses the scope and origins of the area, its
+                   evolution over the past two decades, and the
+                   challenges that lie ahead.},
+  doi =           {10.1145/3446371},
+  issn =          {0360-0300},
+}
+
+@inproceedings{oliverTLSHLocalitySensitive2013,
+  author =        {Oliver, Jonathan and Cheng, Chun and Chen, Yanggui},
+  booktitle =     {2013 {{Fourth Cybercrime}} and {{Trustworthy
+                   Computing Workshop}}},
+  month =         nov,
+  pages =         {7--13},
+  title =         {{{TLSH}} -- {{A Locality Sensitive Hash}}},
+  year =          {2013},
+  abstract =      {Cryptographic hashes such as MD5 and SHA-1 are used
+                   for many data mining and security applications --
+                   they are used as an identifier for files and
+                   documents. However, if a single byte of a file is
+                   changed, then cryptographic hashes result in a
+                   completely different hash value. It would be very
+                   useful to work with hashes which identify that files
+                   were similar based on their hash values. The security
+                   field has proposed similarity digests, and the data
+                   mining community has proposed locality sensitive
+                   hashes. Some proposals include the Nilsimsa hash (a
+                   locality sensitive hash), Ssdeep and Sdhash (both
+                   Ssdeep and Sdhash are similarity digests). Here, we
+                   describe a new locality sensitive hashing scheme the
+                   TLSH. We provide algorithms for evaluating and
+                   comparing hash values and provide a reference to its
+                   open source code. We do an empirical evaluation of
+                   publically available similarity digest schemes. The
+                   empirical evaluation highlights significant problems
+                   with previously proposed schemes; the TLSH scheme
+                   does not suffer from the flaws identified.},
+  doi =           {10.1109/CTC.2013.9},
+}
+
+@misc{oliverFastClusteringHigh2021,
+  author =        {Oliver, Jonathan and Ali, Muqeet and Liu, Haoping and
+                   Hagen, Josiah},
+  title =         {Fast {{Clustering}} of {{High Dimensional Data
+                   Clustering}} the {{Malware Bazaar Dataset}}},
+  year =          {2021},
+  abstract =      {We consider the situation where we wish to cluster
+                   some data according to a distance function. The data
+                   under consideration is high dimensional, and the
+                   number of clusters is unknown. We propose a
+                   single-linkage algorithm which has features suitable
+                   for clustering large datasets of this type. We define
+                   a clustering of a data set as being optimal with
+                   respect to a distance parameter, CDist, if every pair
+                   of points which occur within a distance of CDist are
+                   in the same cluster. The proposed algorithm uses
+                   Vantage-Point-Trees to provide fast nearest neighbor
+                   search resulting in optimal single-linkage clustering
+                   with time complexity O(N log2N ). We offer
+                   adjustments to the algorithm that reduce the time
+                   complexity to O(N logN ), but we lose the guarantee
+                   of optimal clustering. We argue that features of high
+                   dimensional spaces mean that the modification is
+                   likely to result in near optimal single-linkage
+                   clustering. We then explore a public data corpus, and
+                   verify that the proposed algorithm results in near
+                   optimal clustering with time complexity O(N logN ).},
+  url =           {https://tlsh.org/papersDir/n21_opt_cluster.pdf},
+}
+
+@inproceedings{bakClusteringIoTMalware2020,
+  author =        {Bak, M{\'a}rton and Papp, Dorottya and
+                   Tam{\'a}s, Csongor and Butty{\'a}n, Levente},
+  booktitle =     {{{NOMS}} 2020 - 2020 {{IEEE}}/{{IFIP Network
+                   Operations}} and {{Management Symposium}}},
+  month =         apr,
+  pages =         {1--6},
+  title =         {Clustering {{IoT Malware}} Based on {{Binary
+                   Similarity}}},
+  year =          {2020},
+  abstract =      {In this paper, we propose to cluster malware samples
+                   based on their TLSH similarity. We apply this
+                   approach to clustering IoT malware samples as IoT
+                   botnets built from malware infected IoT devices are
+                   becoming an important trend. We study the performance
+                   of two distance-based clustering algorithms, k-medoid
+                   and OPTICS, on a large corpus of IoT malware samples
+                   when they are used with the TLSH difference metric to
+                   measure distances between samples. Our results show
+                   that neither of the two algorithms have acceptable
+                   clustering performance. Hence, we propose a new
+                   clustering algorithm, which achieves a performance
+                   superior to both k-medoid and OPTICS.},
+  doi =           {10.1109/NOMS47738.2020.9110432},
+  issn =          {2374-9709},
+}
+
+@misc{SmartWhitelistingUsing2017,
+  chapter =       {research},
+  journal =       {Trend Micro},
+  month =         mar,
+  title =         {Smart {{Whitelisting Using Locality Sensitive
+                   Hashing}}},
+  year =          {2017},
+  abstract =      {In 2013, we open sourced an implementation of LSH
+                   suitable for security solutions: Trend Micro Locality
+                   Sensitive Hashing (TLSH). TLSH is an approach to LSH,
+                   a kind of fuzzy hashing that can be employed in
+                   machine learning extensions of whitelisting.},
+  url =           {https://www.trendmicro.com/en_us/research/17/c/smart-
+                   whitelisting-using-locality-sensitive-hashing.html},
+}
+
+@misc{intelligenceCombingFuzzUsing2021,
+  author =        {Intelligence, Microsoft Threat},
+  journal =       {Microsoft Security Blog},
+  month =         jul,
+  title =         {Combing through the Fuzz: {{Using}} Fuzzy Hashing and
+                   Deep Learning to Counter Malware Detection Evasion
+                   Techniques},
+  year =          {2021},
+  abstract =      {A new approach for malware classification combines
+                   deep learning with fuzzy hashing. Fuzzy hashes
+                   identify similarities among malicious files and a
+                   deep learning methodology inspired by natural
+                   language processing (NLP) better identifies
+                   similarities that actually matter, improving
+                   detection quality and scale of deployment.},
+  url =           {https://www.microsoft.com/en-us/security/blog/2021/07/27/
+                   combing-through-the-fuzz-using-fuzzy-hashing-and-deep-
+                   learning-to-counter-malware-detection-evasion-techniques/},
+}
+
+@inproceedings{naikRansomwareDetectionMethod2019,
+  author =        {Naik, Nitin and Jenkins, Paul and Savage, Nick},
+  booktitle =     {2019 {{International Symposium}} on {{Systems
+                   Engineering}} ({{ISSE}})},
+  month =         oct,
+  pages =         {1--6},
+  title =         {A {{Ransomware Detection Method Using Fuzzy Hashing}}
+                   for {{Mitigating}} the {{Risk}} of {{Occlusion}} of
+                   {{Information Systems}}},
+  year =          {2019},
+  abstract =      {Today, a significant threat to organisational
+                   information systems is ransomware that can completely
+                   occlude the information system by denying access to
+                   its data. To reduce this exposure and damage from
+                   ransomware attacks, organisations are obliged to
+                   concentrate explicitly on the threat of ransomware,
+                   alongside their malware prevention strategy. In
+                   attempting to prevent the escalation of ransomware
+                   attacks, it is important to account for their
+                   polymorphic behaviour and dispersion of inexhaustible
+                   versions. However, a number of ransomware samples
+                   possess similarity as they are created by similar
+                   groups of threat actors. A particular threat actor or
+                   group often adopts similar practices or codebase to
+                   create unlimited versions of their ransomware. As a
+                   result of these common traits and codebase, it is
+                   probable that new or unknown ransomware variants can
+                   be detected based on a comparison with their
+                   originating or existing samples. Therefore, this
+                   paper presents a detection method for ransomware by
+                   employing a similarity preserving hashing method
+                   called fuzzy hashing. This detection method is
+                   applied on the collected WannaCry or WannaCryptor
+                   ransomware corpus utilising three fuzzy hashing
+                   methods SSDEEP, SDHASH and mvHASH-B to evaluate the
+                   similarity detection success rate by each method.
+                   Moreover, their fuzzy similarity scores are utilised
+                   to cluster the collected ransomware corpus and its
+                   results are compared to determine the relative
+                   accuracy of the selected fuzzy hashing methods.},
+  doi =           {10.1109/ISSE46696.2019.8984540},
+  issn =          {2687-8828},
+}
+
+@inproceedings{naikCyberthreatHuntingPart2019,
+  address =       {New Orleans, LA, USA},
+  author =        {Naik, Nitin and Jenkins, Paul and Savage, Nick and
+                   Yang, Longzhi},
+  booktitle =     {2019 {{IEEE International Conference}} on {{Fuzzy
+                   Systems}} ({{FUZZ-IEEE}})},
+  month =         jun,
+  pages =         {1--6},
+  publisher =     {IEEE},
+  title =         {Cyberthreat {{Hunting}} - {{Part}} 2: {{Tracking
+                   Ransomware Threat Actors}} Using {{Fuzzy Hashing}}
+                   and {{Fuzzy C-Means Clustering}}},
+  year =          {2019},
+  doi =           {10.1109/FUZZ-IEEE.2019.8858825},
+  isbn =          {978-1-5386-1728-1},
+}
+
+@article{almahmoudHashCombHierarchicalDistancePreserving2022,
+  author =        {Almahmoud, Abdelrahman and Damiani, Ernesto and
+                   Otrok, Hadi},
+  journal =       {IEEE Access},
+  pages =         {34393--34403},
+  title =         {Hash-{{Comb}}: {{A Hierarchical Distance-Preserving
+                   Multi-Hash Data Representation}} for {{Collaborative
+                   Analytics}}},
+  volume =        {10},
+  year =          {2022},
+  doi =           {10.1109/ACCESS.2022.3158934},
+  issn =          {2169-3536},
+}
+
+@misc{oliverGitHubTrendmicroTlsh2024,
+  author =        {Oliver, Jonathan},
+  month =         apr,
+  title =         {{{GitHub}} - Trendmicro/Tlsh},
+  year =          {2024},
+  url =           {https://github.com/trendmicro/tlsh},
+}
+
+@inproceedings{deMouraUllrich2021,
+  address =       {Cham},
+  author =        {de Moura, Leonardo and Ullrich, Sebastian},
+  booktitle =     {Automated Deduction -- {{CADE}} 28},
+  editor =        {Platzer, Andr{\'e} and Sutcliffe, Geoff},
+  pages =         {625--635},
+  publisher =     {Springer International Publishing},
+  title =         {The {{Lean}} 4 {{Theorem Prover}} and {{Programming
+                   Language}}},
+  year =          {2021},
+  abstract =      {Lean 4 is a reimplementation of the Lean interactive
+                   theorem prover (ITP) in Lean itself. It addresses
+                   many shortcomings of the previous versions and
+                   contains many new features. Lean 4 is fully
+                   extensible: users can modify and extend the parser,
+                   elaborator, tactics, decision procedures, pretty
+                   printer, and code generator. The new system has a
+                   hygienic macro system custom-built for ITPs. It
+                   contains a new typeclass resolution procedure based
+                   on tabled resolution, addressing significant
+                   performance problems reported by the growing user
+                   base. Lean 4 is also an efficient functional
+                   programming language based on a novel programming
+                   paradigm called functional but in-place. Efficient
+                   code generation is crucial for Lean users because
+                   many write custom proof automation procedures in Lean
+                   itself.},
+  doi =           {10.1007/978-3-030-79876-5_37},
+  isbn =          {978-3-030-79876-5},
+}
+
+@article{fredkinTrieMemory1960,
+  author =        {Fredkin, Edward},
+  journal =       {Commun. ACM},
+  month =         sep,
+  number =        {9},
+  pages =         {490--499},
+  title =         {Trie Memory},
+  volume =        {3},
+  year =          {1960},
+  doi =           {10.1145/367390.367400},
+  issn =          {0001-0782},
+}
+
+@inproceedings{yianilosDataStructuresAlgorithms1993,
+  address =       {USA},
+  author =        {Yianilos, Peter N.},
+  booktitle =     {Proceedings of the Fourth Annual {{ACM-SIAM}}
+                   Symposium on {{Discrete}} Algorithms},
+  month =         jan,
+  pages =         {311--321},
+  publisher =     {{Society for Industrial and Applied Mathematics}},
+  series =        {{{SODA}} '93},
+  title =         {Data Structures and Algorithms for Nearest Neighbor
+                   Search in General Metric Spaces},
+  year =          {1993},
+  isbn =          {978-0-89871-313-8},
+}
+
+@article{uhlmannSatisfyingGeneralProximity1991,
+  author =        {Uhlmann, Jeffrey K.},
+  journal =       {Information Processing Letters},
+  month =         nov,
+  number =        {4},
+  pages =         {175--179},
+  title =         {Satisfying General Proximity / Similarity Queries
+                   with Metric Trees},
+  volume =        {40},
+  year =          {1991},
+  abstract =      {Divide-and-conquer search strategies are described
+                   for satisfying proximity queries involving arbitrary
+                   distance metrics.},
+  doi =           {10.1016/0020-0190(91)90074-R},
+  issn =          {0020-0190},
+}
+
+@misc{baggettTLSHDistanceMetric2023,
+  author =        {Baggett, David},
+  journal =       {GitHub},
+  month =         mar,
+  title =         {{{TLSH}} Distance Metric Appears to Violate Triangle
+                   Inequality},
+  year =          {2023},
+  url =           {https://github.com/trendmicro/tlsh/issues/130#issue-
+                  1623514292},
+}
+
+@inproceedings{oliverDesigningElementsFuzzy2021,
+  address =       {Shenyang, China},
+  author =        {Oliver, Jonathan and Hagen, Josiah},
+  booktitle =     {2021 {{IEEE}} 19th {{International Conference}} on
+                   {{Embedded}} and {{Ubiquitous Computing}} ({{EUC}})},
+  month =         oct,
+  pages =         {1--6},
+  publisher =     {IEEE},
+  title =         {Designing the {{Elements}} of a {{Fuzzy Hashing
+                   Scheme}}},
+  year =          {2021},
+  abstract =      {The goal of ''fuzzy hashing'' is to identify near
+                   duplicates and similar documents using hashes or
+                   digests. We consider a range of design elements that
+                   can be used with fuzzy hashing schemes. We examine
+                   the criteria for evaluating fuzzy hashes, and develop
+                   an approach for optimising a scheme to respect those
+                   criteria. We apply this approach to select
+                   appropriate design elements and parameter values.
+                   This results in surprising choices, the preference of
+                   skip-ngrams for adversarial problem domains; and that
+                   2 bit vectors are preferred to 1 bit vectors.},
+  doi =           {10.1109/EUC53437.2021.00028},
+  isbn =          {978-1-6654-0036-7},
+}
+
+@misc{virustotalAdvancedCorpusSearch2024,
+  author =        {{VirusTotal}},
+  journal =       {VTDoc},
+  month =         jul,
+  title =         {Advanced Corpus Search},
+  year =          {2024},
+  abstract =      {📘 Quota consumption: This endpoint consumes
+                   VirusTotal API quota if user has private/premium API
+                   or VirusTotal Intelligence quota if user only has
+                   VirusTotal Intelligence. 🚧 Special privileges
+                   required: This endpoint is only available for users
+                   with premium privileges. 🚧 Searches using a fuzzy
+                   ha...},
+  url =           {https://docs.virustotal.com/reference/intelligence-search},
+}
+
+@misc{oliverTLSHTechnicalOverview2021,
+  author =        {Oliver, Jonathan},
+  journal =       {TLSH - Technical Overview},
+  month =         apr,
+  title =         {{{TLSH}} - {{Technical Overview}}},
+  year =          {2021},
+  url =           {https://tlsh.org/papers.html},
+}
+
+@misc{oliverTLSHDistanceMetric2024,
+  author =        {Oliver, Jonathan},
+  journal =       {GitHub},
+  month =         jan,
+  title =         {{{TLSH}} Distance Metric Appears to Violate Triangle
+                   Inequality},
+  year =          {2024},
+  abstract =      {Contribute to trendmicro/tlsh development by creating
+                   an account on GitHub.},
+  url =           {https://github.com/trendmicro/tlsh/issues/130#issuecomment-
+                   1906886178},
+}
+
+@inproceedings{oliverHACTFastSearch2020,
+  author =        {Oliver, Jonathan and Ali, Muqeet and Hagen, Josiah},
+  booktitle =     {2020 {{International Conference}} on {{Omni-layer
+                   Intelligent Systems}} ({{COINS}})},
+  month =         aug,
+  pages =         {1--7},
+  title =         {{{HAC-T}} and {{Fast Search}} for {{Similarity}} in
+                   {{Security}}},
+  year =          {2020},
+  abstract =      {Similarity digests have gained popularity for many
+                   security applications like blacklisting/whitelisting,
+                   and finding similar variants of malware. TLSH has
+                   been shown to be particularly good at hunting similar
+                   malware, and is resistant to evasion as compared to
+                   other similarity digests like ssdeep and sdhash.
+                   Searching and clustering are fundamental tools which
+                   help the security analysts and security operations
+                   center (SOC) operators in hunting and analyzing
+                   malware. Current approaches which aim to cluster
+                   malware are not scalable enough to keep up with the
+                   vast amount of malware and goodware available in the
+                   wild. In this paper, we present techniques which
+                   allow for fast search and clustering of TLSH hash
+                   digests which can aid analysts to inspect large
+                   amounts of malware/goodware. Our approach builds on
+                   fast nearest neighbor search techniques to build a
+                   tree-based index which performs fast search based on
+                   TLSH hash digests. The tree-based index is used in
+                   our threshold based Hierarchical Agglomerative
+                   Clustering (HAC-T) algorithm which is able to cluster
+                   digests in a scalable manner. Our clustering
+                   technique can cluster digests in O (n logn) time on
+                   average. We performed an empirical evaluation by
+                   comparing our approach with many standard and recent
+                   clustering techniques. We demonstrate that our
+                   approach is much more scalable and still is able to
+                   produce good cluster quality. We measured cluster
+                   quality using purity on 10 million samples obtained
+                   from VirusTotal. We obtained a high purity score in
+                   the range from 0.97 to 0.98 using labels from five
+                   major anti-virus vendors (Kaspersky, Microsoft,
+                   Symantec, Sophos, and McAfee) which demonstrates the
+                   effectiveness of the proposed method.},
+  doi =           {10.1109/COINS49042.2020.9191381},
+}
+
+@inproceedings{aliScalableMalwareClustering2020,
+  address =       {Arlington, VA, USA},
+  author =        {Ali, Muqeet and Hagen, Josiah and Oliver, Jonathan},
+  booktitle =     {2020 {{IEEE International Conference}} on
+                   {{Intelligence}} and {{Security Informatics}}
+                   ({{ISI}})},
+  month =         nov,
+  pages =         {1--6},
+  publisher =     {IEEE},
+  title =         {Scalable {{Malware Clustering}} Using {{Multi-Stage
+                   Tree Parallelization}}},
+  year =          {2020},
+  doi =           {10.1109/ISI49825.2020.9280546},
+  isbn =          {978-1-7281-8800-3},
+}
+
+@misc{oliverTlshTlshClusterPylib2021,
+  author =        {Oliver, Jonathan},
+  journal =       {GitHub},
+  month =         sep,
+  title =         {Tlsh/{{tlshCluster}}/Pylib/Hac\_lib.Py},
+  year =          {2021},
+  abstract =      {Contribute to trendmicro/tlsh development by creating
+                   an account on GitHub.},
+  url =           {https://github.com/trendmicro/tlsh/blob/
+                   96536e3f5b9b322b44ce88d36126121685e45a77/tlshCluster/pylib/
+                   hac_lib.py#L143},
+}
+
+@misc{kornblumSsdeep2017,
+  author =        {Kornblum, Jesse and Grohne, Helmut and OI, Tsukasa},
+  month =         nov,
+  title =         {Ssdeep},
+  year =          {2017},
+  url =           {https://github.com/ssdeep-project/ssdeep},
+}
+
+@inproceedings{roussevDataFingerprintingSimilarity2010,
+  address =       {Berlin, Heidelberg},
+  author =        {Roussev, Vassil},
+  booktitle =     {Advances in {{Digital Forensics VI}}},
+  editor =        {Chow, Kam-Pui and Shenoi, Sujeet},
+  pages =         {207--226},
+  publisher =     {Springer},
+  title =         {Data {{Fingerprinting}} with {{Similarity Digests}}},
+  year =          {2010},
+  abstract =      {State-of-the-art techniques for data fingerprinting
+                   have been based on randomized feature selection
+                   pioneered by Rabin in 1981. This paper proposes a
+                   new, statistical approach for selecting
+                   fingerprinting features. The approach relies on
+                   entropy estimates and a sizeable empirical study to
+                   pick out the features that are most likely to be
+                   unique to a data object and, therefore, least likely
+                   to trigger false positives. The paper also describes
+                   the implementation of a tool (sdhash) and the results
+                   of an evaluation study. The results demonstrate that
+                   the approach works consistently across different
+                   types of data, and its compact footprint allows for
+                   the digests of targets in excess of 1 TB to be
+                   queried in memory.},
+  doi =           {10.1007/978-3-642-15506-2_15},
+  isbn =          {978-3-642-15506-2},
+}
+
+@inproceedings{oliverUsingRandomizationAttack2014,
+  address =       {Berlin, Heidelberg},
+  author =        {Oliver, Jonathan and Forman, Scott and Cheng, Chun},
+  booktitle =     {Applications and {{Techniques}} in {{Information
+                   Security}}},
+  editor =        {Batten, Lynn and Li, Gang and Niu, Wenjia and
+                   Warren, Matthew},
+  pages =         {199--210},
+  publisher =     {Springer},
+  title =         {Using {{Randomization}} to {{Attack Similarity
+                   Digests}}},
+  year =          {2014},
+  abstract =      {There has been considerable research and use of
+                   similarity digests and Locality Sensitive Hashing
+                   (LSH) schemes - those hashing schemes where small
+                   changes in a file result in small changes in the
+                   digest. These schemes are useful in security and
+                   forensic applications. We examine how well three
+                   similarity digest schemes (Ssdeep, Sdhash and TLSH)
+                   work when exposed to random change. Various file
+                   types are tested by randomly manipulating source
+                   code, Html, text and executable files. In addition,
+                   we test for similarities in modified image files that
+                   were generated by cybercriminals to defeat fuzzy
+                   hashing schemes (spam images). The experiments expose
+                   shortcomings in the Sdhash and Ssdeep schemes that
+                   can be exploited in straight forward ways. The
+                   results suggest that the TLSH scheme is more robust
+                   to the attacks and random changes considered.},
+  doi =           {10.1007/978-3-662-45670-5_19},
+  isbn =          {978-3-662-45670-5},
+}
+
+@inproceedings{paganiPrecisionRecallUnderstanding2018,
+  address =       {New York, NY, USA},
+  author =        {Pagani, Fabio and Dell'Amico, Matteo and
+                   Balzarotti, Davide},
+  booktitle =     {Proceedings of the {{Eighth ACM Conference}} on
+                   {{Data}} and {{Application Security}} and
+                   {{Privacy}}},
+  month =         mar,
+  pages =         {354--365},
+  publisher =     {Association for Computing Machinery},
+  series =        {{{CODASPY}} '18},
+  title =         {Beyond {{Precision}} and {{Recall}}: {{Understanding
+                   Uses}} (and {{Misuses}}) of {{Similarity Hashes}} in
+                   {{Binary Analysis}}},
+  year =          {2018},
+  abstract =      {Fuzzy hashing algorithms provide a convenient way of
+                   summarizing in a compact form the content of files,
+                   and of looking for similarities between them. Because
+                   of this, they are widely used in the security and
+                   forensics communities to look for similarities
+                   between binary program files; one version of them,
+                   ssdeep, is the de facto standard to share information
+                   about known malware.Fuzzy hashes are quite pervasive,
+                   but no study so far answers conclusively the question
+                   of which (if any) fuzzy hashing algorithms are suited
+                   to detect similarities between programs, where we
+                   consider as similar those programs that have code or
+                   libraries in common. We measure how four popular
+                   algorithms perform in different scenarios: when they
+                   are used to correlate statically-compiled files with
+                   the libraries they use, when compiled with different
+                   flags or different compilers, and when applied to
+                   programs that share a large part of their source
+                   code. Perhaps more importantly, we provide
+                   interpretations that explain the reasons why results
+                   vary, sometimes widely, among apparently very similar
+                   use cases.We find that the low-level details of the
+                   compilation process, together with the technicalities
+                   of the hashing algorithms, can explain surprising
+                   results such as similarities dropping to zero with
+                   the change of a single assembly instruction. More in
+                   general, we see that ssdeep, the de facto standard
+                   for this type of analysis, performs definitely worse
+                   than alternative algorithms; we also find that the
+                   best choice of algorithm to use varies depending on
+                   the particularities of the use case scenario.},
+  doi =           {10.1145/3176258.3176306},
+  isbn =          {978-1-4503-5632-9},
+}
+
+@inproceedings{azabMiningMalwareDetect2014,
+  author =        {Azab, Ahmad and Layton, Robert and Alazab, Mamoun and
+                   Oliver, Jonathan},
+  booktitle =     {2014 {{Fifth Cybercrime}} and {{Trustworthy Computing
+                   Conference}}},
+  month =         nov,
+  pages =         {44--53},
+  title =         {Mining {{Malware}} to {{Detect Variants}}},
+  year =          {2014},
+  abstract =      {Cybercrime continues to be a growing challenge and
+                   malware is one of the most serious security threats
+                   on the Internet today which have been in existence
+                   from the very early days. Cyber criminals continue to
+                   develop and advance their malicious attacks.
+                   Unfortunately, existing techniques for detecting
+                   malware and analysing code samples are insufficient
+                   and have significant limitations. For example, most
+                   of malware detection studies focused only on
+                   detection and neglected the variants of the code.
+                   Investigating malware variants allows antivirus
+                   products and governments to more easily detect these
+                   new attacks, attribution, predict such or similar
+                   attacks in the future, and further analysis. The
+                   focus of this paper is performing similarity measures
+                   between different malware binaries for the same
+                   variant utilizing data mining concepts in conjunction
+                   with hashing algorithms. In this paper, we
+                   investigate and evaluate using the Trend Locality
+                   Sensitive Hashing (TLSH) algorithm to group binaries
+                   that belong to the same variant together, utilizing
+                   the k-NN algorithm. Two Zeus variants were tested,
+                   TSPY\_ZBOT and MAL\_ZBOT to address the effectiveness
+                   of the proposed approach. We compare TLSH to related
+                   hashing methods (SSDEEP, SDHASH and NILSIMSA) that
+                   are currently used for this purpose. Experimental
+                   evaluation demonstrates that our method can
+                   effectively detect variants of malware and resilient
+                   to common obfuscations used by cyber criminals. Our
+                   results show that TLSH and SDHASH provide the highest
+                   accuracy results in scoring an F-measure of 0.989 and
+                   0.999 respectively.},
+  doi =           {10.1109/CTC.2014.11},
+}
+
+@article{guImprovedMethodLocality2013,
+  author =        {Gu, Xiaoguang and Zhang, Yongdong and Zhang, Lei and
+                   Zhang, Dongming and Li, Jintao},
+  journal =       {Signal Processing},
+  month =         aug,
+  number =        {8},
+  pages =         {2244--2255},
+  series =        {Indexing of {{Large-Scale Multimedia Signals}}},
+  title =         {An Improved Method of Locality Sensitive Hashing for
+                   Indexing Large-Scale and High-Dimensional Features},
+  volume =        {93},
+  year =          {2013},
+  abstract =      {In recent years, Locality sensitive hashing (LSH) has
+                   been popularly used as an effective and efficient
+                   index structure of multimedia signals. LSH is
+                   originally proposed for resolving the
+                   high-dimensional approximate similarity search
+                   problem. Until now, many kinds of variations of LSH
+                   have been proposed for large-scale indexing. Much of
+                   the interest is focused on improving the query
+                   accuracy for skewed data distribution and reducing
+                   the storage space. However, when using LSH, a final
+                   filtering process based on exact similarity measure
+                   is needed. When the dataset is large-scale, the
+                   number of points to be filtered becomes large. As a
+                   result, the filtering speed becomes the bottleneck of
+                   improving the query speed when the scale of data
+                   becomes larger and larger. Furthermore, we observe a
+                   ``Non-Uniform'' phenomenon in the most popular
+                   Euclidean LSH which can degrade the filtering speed
+                   dramatically. In this paper, a pivot-based algorithm
+                   is proposed to improve the filtering speed by using
+                   triangle inequality to prune the search process.
+                   Furthermore, a novel method to select an optimal
+                   pivot for even larger improvement is provided. The
+                   experimental results on two open large-scale datasets
+                   show that our method can significantly improve the
+                   query speed of Euclidean LSH.},
+  doi =           {10.1016/j.sigpro.2012.07.014},
+  issn =          {0165-1684},
+}
+
+@inproceedings{oprisaLocalitysensitiveHashingOptimizations2014,
+  author =        {Opri{\c s}a, Ciprian and Checiche{\c s}, Marius and
+                   N{\u a}ndrean, Adrian},
+  booktitle =     {2014 {{IEEE}} 10th {{International Conference}} on
+                   {{Intelligent Computer Communication}} and
+                   {{Processing}} ({{ICCP}})},
+  month =         sep,
+  pages =         {97--104},
+  title =         {Locality-Sensitive Hashing Optimizations for Fast
+                   Malware Clustering},
+  year =          {2014},
+  abstract =      {Large datasets, including malware collections are
+                   difficult to cluster. Although we are mainly dealing
+                   with polynomial algorithms, the long running times
+                   make them difficult to use in practice. The main
+                   issue consists in the fact that the classical
+                   hierarchical algorithms need to compute the distance
+                   between each pair of items. This paper will show a
+                   faster approach for clustering large collections of
+                   malware samples using a technique called
+                   locality-sensitive hashing. This approach performs
+                   single-linkage clustering faster than the state of
+                   the art methods, while producing clusters of a
+                   similar quality. Although our proposed algorithm is
+                   still quadratic in theory, the coefficient for the
+                   quadratic term is several orders of magnitude
+                   smaller. Our experiments show that we can reduce this
+                   coefficient to under 0.02\% and still produce
+                   clusters 99.9\% similar with the ones produced by the
+                   single linkage algorithm.},
+  doi =           {10.1109/ICCP.2014.6936960},
+}
+
+@misc{jaredwilsonPermhashNoCurls2023,
+  author =        {{Jared Wilson}},
+  journal =       {Google Cloud Blog},
+  month =         may,
+  title =         {Permhash --- {{No Curls Necessary}}},
+  year =          {2023},
+  abstract =      {A deep dive into Permhash showing its theory and
+                   demonstrating real-world successes and shortcomings.},
+  url =           {https://cloud.google.com/blog/topics/threat-intelligence/
+                   permhash-no-curls-necessary},
+}
+
+@inproceedings{wicherskiPeHashNovelApproach2009,
+  author =        {Wicherski, Georg},
+  booktitle =     {{{USENIX Workshop}} on {{Large-Scale Exploits}} and
+                   {{Emergent Threats}}},
+  month =         apr,
+  title =         {{{peHash}}: {{A Novel Approach}} to {{Fast Malware
+                   Clustering}}},
+  year =          {2009},
+  abstract =      {Data collection is not a big issue anymore with
+                   available honeypot software and setups. However
+                   malware collections gathered from these honeypot
+                   systems often suffer from massive sample counts, data
+                   analysis systems like sandboxes cannot cope with.
+                   Sophisticated self-modifying malware is able to
+                   generate new polymorphic instances of itself with
+                   different message digest sums for each infection
+                   attempt, thus resulting in many different samples
+                   stored for the same specimen. Scaling analysis
+                   systems that are fed by databases that rely on sample
+                   uniqueness based on message digests is only feasible
+                   to a certain extent. In this paper we introduce a non
+                   cryptographic, fast to calculate hash function for
+                   binaries in the Portable Executable format that
+                   transforms structural information about a sample into
+                   a hash value. Grouping binaries by hash values
+                   calculated with the new function allows for detection
+                   of multiple instances of the same polymorphic
+                   specimen as well as samples that are broken e.g. due
+                   to transfer errors. Practical evaluation on different
+                   malware sets shows that the new function allows for a
+                   significant reduction of sample counts.},
+  url =           {https://www.semanticscholar.org/paper/peHash%3A-A-Novel-
+                  Approach-to-Fast-Malware-Clustering-Wicherski/
+                  a52ddc15377bc9f2ef1f237afa41d324f321bb9b},
+}
+
+@inproceedings{liTopologyAwareHashingEffective2019,
+  address =       {Cham},
+  author =        {Li, Yuping and Jang, Jiyong and Ou, Xinming},
+  booktitle =     {Security and {{Privacy}} in {{Communication
+                   Networks}}},
+  editor =        {Chen, Songqing and Choo, Kim-Kwang Raymond and
+                   Fu, Xinwen and Lou, Wenjing and Mohaisen, Aziz},
+  pages =         {278--298},
+  publisher =     {Springer International Publishing},
+  title =         {Topology-{{Aware Hashing}} for {{Effective Control
+                   Flow Graph Similarity Analysis}}},
+  year =          {2019},
+  abstract =      {Control Flow Graph (CFG) similarity analysis is an
+                   essential technique for a variety of security
+                   analysis tasks, including malware detection and
+                   malware clustering. Even though various algorithms
+                   have been developed, existing CFG similarity analysis
+                   methods still suffer from limited efficiency,
+                   accuracy, and usability. In this paper, we propose a
+                   novel fuzzy hashing scheme called topology-aware
+                   hashing (TAH) for effective and efficient CFG
+                   similarity analysis. Given the CFGs constructed from
+                   program binaries, we extract blended n-gram graphical
+                   features of the CFGs, encode the graphical features
+                   into numeric vectors (called graph signatures), and
+                   then measure the graph similarity by comparing the
+                   graph signatures. We further employ a fuzzy hashing
+                   technique to convert the numeric graph signatures
+                   into smaller fixed-size fuzzy hash signatures for
+                   efficient similarity calculation. Our comprehensive
+                   evaluation demonstrates that TAH is more effective
+                   and efficient compared to existing CFG comparison
+                   techniques. To demonstrate the applicability of TAH
+                   to real-world security analysis tasks, we develop a
+                   binary similarity analysis tool based on TAH, and
+                   show that it outperforms existing similarity analysis
+                   tools while conducting malware clustering.},
+  doi =           {10.1007/978-3-030-37228-6_14},
+  isbn =          {978-3-030-37228-6},
+}
+
+@inproceedings{Mathlib,
+  author =        {{The mathlib community}},
+  booktitle =     {Proceedings of the 9th {{ACM SIGPLAN}} International
+                   Conference on Certified Programs and Proofs, {{CPP}}
+                   2020, New Orleans, {{LA}}, {{USA}}, January 20-21,
+                   2020},
+  pages =         {367--381},
+  title =         {The {{Lean Mathematical Library}}},
+  year =          {2020},
+  bibsource =     {dblp computer science bibliography, https://dblp.org},
+  doi =           {10.1145/3372885.3373824},
+  timestamp =     {Thu, 23 Jan 2020 16:12:31 +0100},
+}
+
+@misc{martinabadiTensorFlowLargeScaleMachine2015,
+  author =        {{Mart{\'i}n Abadi} and {Ashish Agarwal} and
+                   {Paul Barham} and {Eugene Brevdo} and {Zhifeng Chen} and
+                   {Craig Citro} and {Greg S. Corrado} and {Andy Davis} and
+                   {Jeffrey Dean} and {Matthieu Devin} and
+                   {Sanjay Ghemawat} and {Ian Goodfellow} and
+                   {Andrew Harp} and {Geoffrey Irving} and
+                   {Michael Isard} and Jia, Yangqing and
+                   {Rafal Jozefowicz} and {Lukasz Kaiser} and
+                   {Manjunath Kudlur} and {Josh Levenberg} and
+                   {Dandelion Man{\'e}} and {Rajat Monga} and
+                   {Sherry Moore} and {Derek Murray} and {Chris Olah} and
+                   {Mike Schuster} and {Jonathon Shlens} and
+                   {Benoit Steiner} and {Ilya Sutskever} and
+                   {Kunal Talwar} and {Paul Tucker} and
+                   {Vincent Vanhoucke} and {Vijay Vasudevan} and
+                   {Fernanda Vi{\'e}gas} and {Oriol Vinyals} and
+                   {Pete Warden} and {Martin Wattenberg} and
+                   {Martin Wicke} and {Yuan Yu} and {Xiaoqiang Zheng}},
+  title =         {{{TensorFlow}}: {{Large-Scale Machine Learning}} on
+                   {{Heterogeneous Systems}}},
+  year =          {2015},
+  url =           {https://www.tensorflow.org/},
+}
+
+@misc{PytlshTLSHPython2024,
+  month =         sep,
+  title =         {Py-Tlsh: {{TLSH}} ({{C}}++ {{Python}} Extension)},
+  year =          {2024},
+  url =           {https://github.com/trendmicro/tlsh},
+}
+
+@misc{VirusSharecom2024,
+  journal =       {VirusShare},
+  month =         sep,
+  title =         {{{VirusShare}}.Com},
+  year =          {2024},
+  url =           {https://virusshare.com/},
+}
+
+@misc{hutelmyerImplementingTLSHBased2024,
+  author =        {Hutelmyer, Paul and Borre, Ryan},
+  journal =       {Implementing TLSH Based Detection to Identify Malware
+                   Variants},
+  month =         dec,
+  title =         {Implementing {{TLSH Based Detection}} to {{Identify
+                   Malware Variants}}},
+  year =          {2024},
+  abstract =      {An article by Paul Hutelmyer and Ryan Borre : TLSH is
+                   a fuzzy hashing algorithm that focuses on identifying
+                   similarities between files.},
+  url =           {https://tech.target.com/blog/
+                   implementing_TLSH_based_detection},
+}
+
+@inproceedings{joyceAVScan2VecFeatureLearning2023,
+  address =       {New York, NY, USA},
+  author =        {Joyce, Robert J. and Patel, Tirth and
+                   Nicholas, Charles and Raff, Edward},
+  booktitle =     {Proceedings of the 16th {{ACM Workshop}} on
+                   {{Artificial Intelligence}} and {{Security}}},
+  month =         nov,
+  pages =         {185--196},
+  publisher =     {Association for Computing Machinery},
+  series =        {{{AISec}} '23},
+  title =         {{{AVScan2Vec}}: {{Feature Learning}} on {{Antivirus
+                   Scan Data}} for {{Production-Scale Malware Corpora}}},
+  year =          {2023},
+  abstract =      {When investigating a malicious file, searching for
+                   related files is a common task that malware analysts
+                   must perform. Given that production malware corpora
+                   may contain over a billion files and consume
+                   petabytes of storage, many feature extraction and
+                   similarity search approaches are computationally
+                   infeasible. Our work explores the potential of
+                   antivirus (AV) scan data as a scalable source of
+                   features for malware. This is possible because AV
+                   scan reports are widely available through services
+                   such as VirusTotal and are {\textasciitilde}100x
+                   smaller than the average malware sample. The
+                   information within an AV scan report is abundant with
+                   information and can indicate a malicious file's
+                   family, behavior, target operating system, and many
+                   other characteristics. We introduce AVScan2Vec, a
+                   neural model trained to comprehend the semantics of
+                   AV scan data. AVScan2Vec ingests AV scan data for a
+                   malicious file and outputs a meaningful vector
+                   representation. AVScan2Vec vectors are
+                   {\textasciitilde}3 to 85x smaller than popular
+                   alternatives in use today, enabling faster vector
+                   comparisons and lower memory usage. By incorporating
+                   Dynamic Continuous Indexing, we show that
+                   nearest-neighbor queries on AVScan2Vec vectors can
+                   scale to even the largest malware production
+                   datasets. We also demonstrate that AVScan2Vec vectors
+                   are superior to other leading malware feature vector
+                   representations across nearly all classification,
+                   clustering, and nearest-neighbor lookup algorithms
+                   that we evaluated.},
+  doi =           {10.1145/3605764.3623907},
+  isbn =          {979-8-4007-0260-0},
+}
+
+@misc{SysinfoCratesioRust2024,
+  month =         dec,
+  title =         {Sysinfo - Crates.Io: {{Rust Package Registry}}},
+  year =          {2024},
+  abstract =      {Library to get system information such as processes,
+                   CPUs, disks, components and networks},
+  url =           {https://crates.io/crates/sysinfo},
+}
+
+@article{harris2020array,
+  author =        {Harris, Charles R. and Millman, K. Jarrod and
+                   {van der Walt}, St{\'e}fan J. and Gommers, Ralf and
+                   Virtanen, Pauli and Cournapeau, David and
+                   Wieser, Eric and Taylor, Julian and Berg, Sebastian and
+                   Smith, Nathaniel J. and Kern, Robert and Picus, Matti and
+                   Hoyer, Stephan and {van Kerkwijk}, Marten H. and
+                   Brett, Matthew and Haldane, Allan and
+                   {del R{\'i}o}, Jaime Fern{\'a}ndez and Wiebe, Mark and
+                   Peterson, Pearu and {G{\'e}rard-Marchant}, Pierre and
+                   Sheppard, Kevin and Reddy, Tyler and
+                   Weckesser, Warren and Abbasi, Hameer and
+                   Gohlke, Christoph and Oliphant, Travis E.},
+  journal =       {Nature},
+  month =         sep,
+  number =        {7825},
+  pages =         {357--362},
+  publisher =     {{Springer Science and Business Media LLC}},
+  title =         {Array Programming with {{NumPy}}},
+  volume =        {585},
+  year =          {2020},
+  doi =           {10.1038/s41586-020-2649-2},
+}

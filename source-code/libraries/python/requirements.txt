@@ -1,0 +1,8 @@
+numba==0.60.0
+numpy==2.0.1
+py_tlsh==4.7.2
+pytest==8.3.3
+pytest_benchmark==5.1.0
+pytest_mock==3.14.0
+pytest_xdist==3.6.1
+tensorflow==2.18.0
